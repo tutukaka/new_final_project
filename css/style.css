@@ -4,42 +4,133 @@
   padding: 0;
 }
 
+.bxbb {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
 
-.heder {
+.header {
   margin: 0 auto;
   width: 1920px;
   height: 725px;
-  background-image: url(jpg/hederFon.gif);
+  background-image: url(/image/hederFon.gif);
   background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 13px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.header_background {
+  height: 83px;
+  background-image: url(/image/menu_fon.png);
+  align-items: center;
+  justify-content: center;
+}
+.header_info {
+  width: 972px;
+}
+.header_info_logo {
+  width: 172px;
+  height: 45px;
+  font-weight: 500;
+}
+.header_info_logo_a {
+  color: #ffffff;
+}
+.header_info_logo_1 {
+  font-size: 36px;
+  letter-spacing: 0.5px;
+  line-height: 32px;
+}
+.header_info_logo_2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  line-height: 18px;
+  margin-left: 2px;
+}
+.header_info_tel {
+  margin-left: 104px;
+  justify-content: center;
+  align-items: center;
+}
+.header_info_tel_img {
+  width: 17px;
+  height: 25px;
+  margin-right: 13px;
+}
+.header_info_tel_number {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+}
+.header_info_email {
+  margin-left: 39px;
+  justify-content: center;
+  align-items: center;
+}
+.header_info_email_img {
+  width: 25px;
+  height: 19px;
+  margin-right: 14px;
+  padding-top: 3px;
+}
+.header_info_email_address {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+}
+.header_info_search {
+  margin-left: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.header_info_search_input {
+  width: 157px;
+  height: 38px;
+  background: none;
+  border: 1px solid #ffffff;
+  padding-left: 16px;
+}
+.header_info_search_button {
+  text-align: center;
+  width: 50px;
+  height: 38px;
+  background: none;
+  border: 1px solid #ffffff;
+  margin-left: -1px;
+}
 
 .menu {
-  height: 83px;
-  background-image: url(jpg/menu_fon.png);
-}
-
-.nav {
   text-align: center;
+  margin-top: 32px;
 }
-
-.nav li {
-  list-style-type: none;
+.menu_list {
   display: inline-block;
 }
-
-.nav a {
-  text-decoration: none;
+.menu_link {
   color: #000000;
   font-size: 17px;
   font-weight: 400;
-  letter-spacing: 0.36px;
+  letter-spacing: -1px;
+  padding: 0 16px;
+  transition: color 0.5s;
+}
+.menu_link:hover {
+  transition: color 0.5s;
+  color: #ffffff;
 }
 
 .main {
@@ -107,8 +198,8 @@ body {
 }
 
 .services_table td {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .services_table td h3 {
@@ -156,6 +247,11 @@ body {
   position: relative;
   justify-content: center;
   align-items: center;
+  transition: background-color 1s;
+}
+.sirle:hover {
+  transition: background-color 1s;
+  background-color: #f44336;
 }
 
 .vetka {
@@ -206,10 +302,6 @@ body {
   margin-left: 1px;
 }
 
-.sirle:hover {
-  background-color: #f44336;
-}
-
 /**=====================конец кругов====================**/
 .services_table_1 {
   text-align: end;
@@ -233,7 +325,7 @@ body {
 
 .block6 {
   height: 537px;
-  background-image: url(jpg/block6Fon.gif);
+  background-image: url(image/block6Fon.gif);
   background-repeat: no-repeat;
 }
 
@@ -248,7 +340,7 @@ body {
 
 .form {
   height: 313px;
-  background-image: url(jpg/hederFon1.gif);
+  background-image: url(image/hederFon1.gif);
   background-repeat: no-repeat;
 }
 
