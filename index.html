@@ -7,107 +7,163 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div class="heder">
-    <div class="menu"></div>
-    <div class="navigation">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+<div class="header bxbb">
+    <div class="header_background flex">
+        <div class="header_info flex">
+            <div class="header_info_logo">
+                <a class="header_info_logo_a" href="#">
+                    <p class="header_info_logo_1">Historical</p>
+                    <p class="header_info_logo_2">games</p>
+                </a>
+            </div>
+            <div class="header_info_tel flex">
+                <a class="flex" href="#">
+                    <img class="header_info_tel_img" src="image/tel_logo.png" alt="ico">
+                    <p class="header_info_tel_number">+123 456 7890</p>
+                </a>
+            </div>
+            <div class="header_info_email flex">
+                <a class="flex" href="#">
+                    <img class="header_info_email_img" src="image/email_logo.png" alt="ico">
+                    <p class="header_info_email_address">info@example.com</p>
+                </a>
+            </div>
+            <form class="header_info_search flex">
+                <label>
+                    <input class="header_info_search_input bxbb" type="text" placeholder="Search">
+                </label>
+                <button class="header_info_search_button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="menu flex">
+        <ul class="menu_ul flex">
+            <li class="menu_list">
+                <a class="menu_link" href="#">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+            <li class="menu_list">
+                <a class="menu_link" href="#">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+            <li class="menu_list">
+                <a class="menu_link" href="#">Services</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+            <li class="menu_list">
+                <a class="menu_link" href="#">Gallery</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
+            <li class="menu_list">
+                <a class="menu_link" href="#">News</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+            <li class="menu_list">
+                <a class="menu_link" href="#">Team</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+            <li class="menu_list">
+                <a class="menu_link" href="#">Contact Us</a>
             </li>
         </ul>
     </div>
+    <div class="header_text">
+        <p class="header_text_nunc">Nunc eget nibh</p>
+        <div class="header_text_bloc"></div>
+        <p class="header_text_morbi">Morbi in nisl auctor</p>
+    </div>
+    <div class="social flex">
+        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="fab fa-facebook-f"></i></a></div>
+        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="social_circle_ico fab fa-twitter"></i></a></div>
+        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="social_circle_ico fas fa-rss"></i></a></div>
+        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="social_circle_ico fab fa-vk"></i></a></div>
+    </div>
 </div>
 <div class="main">
-    <div class="about_Us">
-        <div class="text_about_Us">
-            <h2>About Us</h2>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+    <div class="about_us">
+        <div class="about_us_text">
+            <h2 class="about_us_text_h2">About Us!</h2>
+            <p class="about_us_text_p">Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur
+                magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                amet, consectetur, adipisci velit. Ut enim ad minima veniam,
+                quis nostrum exercitationem ullam corporis suscipit laboriosam,
+                nisi ut aliquid ex ea commodi consequatur?
                 <br><br>
-                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                esse quam nihil molestiae consequatur, vel illum qui dolorem eum
+                fugiat quo voluptas nulla pariatur?
             </p>
         </div>
         <div class="about_Us_img">
-            <img src="jpg/1.jpg" alt="">
+            <img class="about_Us_img_style" src="image/1.jpg" alt="">
         </div>
     </div>
     <div class="services">
-        <h2 class="services_text">Services</h2>
+        <h2 class="services_header">Services</h2>
         <table class="services_table">
-            <tr class="cild1_table">
-                <td class="services_table_1">
-                    <h3 class="cild1_h3">Repreh Qui In Ea Voluptate</h3>
-                    <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+            <tr class="services_table_row_1">
+                <td class="services_table_cell_1">
+                    <h3 class="services_table_h3 services_table_row_1_h3">Repreh Qui In Ea Voluptate</h3>
+                    <p class="services_table_p">Itaque earum rerum hic tenetur a sapiente delectus, ut aut
                         reiciendis voluptatibus maiores alias consequatur aut
                         perferendis doloribus asperiores repellat.</p>
                 </td>
-                <td><a href="" class="sirle"><img src="jpg/vetka.gif" alt="ico" class="vetka"></a></td>
-                <td class="spase_services" rowspan="3"></td>
-                <td><a href="" class="sirle"><img src="jpg/arrow-up-bold-circle-outline.gif" alt="ico" class="arrow"></a></td>
-                <td class="services_table_2">
-                    <h3 class="cild1_h3">Voluptatibus Maiores Alias</h3>
-                    <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                <td><a href="#" class="services_table_circle"><img src="image/vetka.png" alt="ico" class="services_table_vetka"></a></td>
+                <td class="services_table_column" rowspan="3"></td>
+                <td><a href="#" class="services_table_circle">
+                    <img src="image/arrow-up-bold-circle-outline.png" alt="ico" class="services_table_arrow"></a></td>
+                <td class="services_table_cell_2">
+                    <h3 class="services_table_h3 services_table_row_1_h3">Voluptatibus Maiores Alias</h3>
+                    <p class="services_table_p">Itaque earum rerum hic tenetur a sapiente delectus, ut aut
                         reiciendis voluptatibus maiores alias consequatur aut
                         perferendis doloribus asperiores repellat.</p>
                 </td>
             </tr>
             <tr>
-                <td class="services_table_1">
-                    <h3>Aut Perferendis Doloribus</h3>
-                    <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                <td class="services_table_cell_1">
+                    <h3 class="services_table_h3">Aut Perferendis Doloribus</h3>
+                    <p class="services_table_p">Itaque earum rerum hic tenetur a sapiente delectus, ut aut
                         reiciendis voluptatibus maiores alias consequatur aut
                         perferendis doloribus asperiores repellat.</p>
                 </td>
-                <td><a href="" class="sirle"><img src="jpg/$.gif" alt="ico" class="baks"></a></td>
-                <td><a href="" class="sirle"><img src="jpg/home.gif" alt="ico" class="home"></a></td>
-                <td class="services_table_2">
-                    <h3>Dut Aut Reiciendis Maiores</h3>
-                    <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                <td><a href="#" class="services_table_circle"><img src="image/$.png" alt="ico" class="services_table_baks"></a></td>
+                <td><a href="#" class="services_table_circle"><img src="image/home.png" alt="ico" class="services_table_home"></a></td>
+                <td class="services_table_cell_2">
+                    <h3 class="services_table_h3">Dut Aut Reiciendis Maiores</h3>
+                    <p class="services_table_p">Itaque earum rerum hic tenetur a sapiente delectus, ut aut
                         reiciendis voluptatibus maiores alias consequatur aut
                         perferendis doloribus asperiores repellat.</p>
                 </td>
             </tr>
-            <tr class="cild2_table">
-                <td class="services_table_1">
-                    <h3>Maiores Alias Consequatur</h3>
-                    <p class="cild3_p">Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+            <tr class="services_table_row_3">
+                <td class="services_table_cell_1">
+                    <h3 class="services_table_h3">Maiores Alias Consequatur</h3>
+                    <p  class="services_table_p services_table_row_3_p">
+                        Itaque earum rerum hic tenetur a sapiente delectus, ut aut
                         reiciendis voluptatibus maiores alias consequatur aut
                         perferendis doloribus asperiores repellat.</p>
                 </td>
-                <td><a href="" class="sirle"><img src="jpg/poll.gif" alt="ico" class="poll"></a></td>
-                <td><a href="" class="sirle"><img src="jpg/settings.gif" alt="ico" class="settings"></a></td>
-                <td class="services_table_2">
-                    <h3>Doloribus Volupta Maiores</h3>
-                    <p class="cild3_p">Itaque earum rerum hic tenetur a sapiente delectus, ut aut
+                <td><a href="#" class="services_table_circle"><img src="image/poll.png" alt="ico" class="services_table_poll"></a></td>
+                <td><a href="#" class="services_table_circle"><img src="image/settings.png" alt="ico" class="services_table_settings"></a></td>
+                <td class="services_table_cell_2">
+                    <h3 class="services_table_h3">Doloribus Volupta Maiores</h3>
+                    <p  class="services_table_p services_table_row_3_p">
+                        Itaque earum rerum hic tenetur a sapiente delectus, ut aut
                         reiciendis voluptatibus maiores alias consequatur aut
                         perferendis doloribus asperiores repellat.</p>
                 </td>
             </tr>
         </table>
     </div>
-    <div class="gallery"></div>
+    <div class="gallery bxbb">
+        <div class="gallery_header bxbb">
+            <p class="gallery_header_text">Our Gallery</p>
+        </div>
+        <div class="gallery_list">
+            .
+        </div>
+    </div>
     <div class="block6"></div>
     <div class="block7"></div>
     <div class="our_team"></div>

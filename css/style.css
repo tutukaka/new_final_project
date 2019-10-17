@@ -17,14 +17,14 @@ a {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .header {
   margin: 0 auto;
   width: 1920px;
   height: 725px;
-  background-image: url(/image/hederFon.gif);
+  background-image: url(../image/hederFonBig.gif);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 13px;
@@ -34,7 +34,7 @@ body {
 }
 .header_background {
   height: 83px;
-  background-image: url(/image/menu_fon.png);
+  background-image: url(../image/menu_fon.png);
   align-items: center;
   justify-content: center;
 }
@@ -47,6 +47,7 @@ body {
   font-weight: 500;
 }
 .header_info_logo_a {
+  font-family: "Poppins", sans-serif;
   color: #ffffff;
 }
 .header_info_logo_1 {
@@ -62,24 +63,34 @@ body {
   margin-left: 2px;
 }
 .header_info_tel {
-  margin-left: 104px;
+  margin-left: 154px;
   justify-content: center;
   align-items: center;
+}
+.header_info_tel:hover .header_info_tel_number {
+  transition: color 0.5s;
+  color: #000000;
 }
 .header_info_tel_img {
   width: 17px;
   height: 25px;
-  margin-right: 13px;
+  margin-right: 14px;
 }
 .header_info_tel_number {
   color: #ffffff;
   font-size: 17px;
   font-weight: 400;
+  padding-top: 2px;
+  transition: color 0.5s;
 }
 .header_info_email {
   margin-left: 39px;
   justify-content: center;
   align-items: center;
+}
+.header_info_email:hover .header_info_email_address {
+  transition: color 0.5s;
+  color: #000000;
 }
 .header_info_email_img {
   width: 25px;
@@ -91,6 +102,7 @@ body {
   color: #ffffff;
   font-size: 17px;
   font-weight: 400;
+  transition: color 0.5s;
 }
 .header_info_search {
   margin-left: 100px;
@@ -104,6 +116,9 @@ body {
   border: 1px solid #ffffff;
   padding-left: 16px;
 }
+.header_info_search_input:hover {
+  box-shadow: 1px 1px 1px 0 #ffffff;
+}
 .header_info_search_button {
   text-align: center;
   width: 50px;
@@ -112,25 +127,98 @@ body {
   border: 1px solid #ffffff;
   margin-left: -1px;
 }
+.header_info_search_button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 0 #ffffff;
+}
+.header_info_search_button i {
+  color: #ffffff;
+}
 
 .menu {
-  text-align: center;
-  margin-top: 32px;
+  height: 78px;
+  border-bottom: 1px solid #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+.menu_ul {
+  height: 100%;
 }
 .menu_list {
-  display: inline-block;
+  list-style-type: none;
+  height: 100%;
 }
 .menu_link {
+  display: flex;
+  align-items: center;
   color: #000000;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: -1px;
   padding: 0 16px;
-  transition: color 0.5s;
+  transition: color 0.5s, border-bottom 0.5s;
+  height: 100%;
+  border-bottom: 3px solid transparent;
 }
 .menu_link:hover {
-  transition: color 0.5s;
+  transition: color 0.5s, border-bottom 0.5s;
   color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+
+.header_text {
+  text-align: center;
+  margin-top: 130px;
+}
+.header_text_nunc {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 16px;
+}
+.header_text_bloc {
+  width: 80px;
+  height: 2px;
+  background-color: #ffffff;
+  margin-left: 920px;
+  margin-bottom: 60px;
+}
+.header_text_morbi {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.social {
+  margin-top: 60px;
+  justify-content: center;
+}
+.social_circle {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  margin-right: 12px;
+  transition: border-color 0.5s;
+}
+.social_circle:hover {
+  transition: border-color 0.5s;
+  border: 2px solid #000000;
+}
+.social_circle_ico {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.5s;
+}
+.social_circle_ico:hover {
+  transition: color 0.5s;
+  color: #000000;
 }
 
 .main {
@@ -138,9 +226,8 @@ body {
   width: 1920px;
 }
 
-/**=============блок2==============**/
-.about_Us {
-  height: 500px;
+.about_us {
+  min-height: 500px;
   display: flex;
   justify-content: center;
   padding-top: 81px;
@@ -148,32 +235,30 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.about_Us .text_about_Us {
+.about_us_text {
   width: 399px;
-  height: 266px;
-  margin-right: 33px;
-  margin-top: 14px;
+  min-height: 266px;
+  margin: 14px 33px 50px 0;
 }
-.about_Us h2 {
+.about_us_text_h2 {
+  font-family: "Poppins", sans-serif;
   color: #f44336;
   font-size: 36px;
   font-weight: 500;
   margin: 0 0;
 }
-.about_Us p {
+.about_us_text_p {
   color: #999999;
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0.12px;
   line-height: 24px;
 }
-
-.about_Us_img img {
+.about_us_img_style {
   width: 540px;
   height: 338px;
 }
 
-/**===============================блок3================**/
 .services {
   height: 762px;
   background-color: #f7f7f7;
@@ -183,61 +268,57 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-.services_text {
+.services_header {
+  font-family: "Poppins", sans-serif;
   color: #f44336;
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 87px;
 }
-
 .services_table {
   width: 990px;
   height: 448px;
   border-collapse: collapse;
 }
-
-.services_table td {
-  padding-top: 0;
-  padding-bottom: 0;
+.services_table_column {
+  width: 90px;
 }
-
-.services_table td h3 {
+.services_table_cell_1 {
+  text-align: end;
+  width: 348px;
+  padding-right: 66px;
+}
+.services_table_cell_2 {
+  width: 348px;
+  padding-left: 68px;
+}
+.services_table_h3 {
+  font-family: "Poppins", sans-serif;
   padding-bottom: 18px;
-}
-
-.cild1_table {
-  vertical-align: top;
-}
-
-.cild2_table {
-  vertical-align: bottom;
-}
-
-.cild1_h3 {
-  padding-top: 4px;
-}
-
-.cild3_p {
-  padding-bottom: 11px;
-}
-
-.services_table td p {
-  color: #999999;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.12px;
-}
-
-.services_table td h3 {
   color: #000000;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.16px;
 }
-
-/**===================круги 3 блок===============**/
-.sirle {
+.services_table_p {
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+}
+.services_table_row_1 {
+  vertical-align: top;
+}
+.services_table_row_1_h3 {
+  padding-top: 4px;
+}
+.services_table_row_3 {
+  vertical-align: bottom;
+}
+.services_table_row_3_p {
+  padding-bottom: 11px;
+}
+.services_table_circle {
   display: flex;
   border: 1px solid #acacac;
   background-color: #e1e1e1;
@@ -249,83 +330,57 @@ body {
   align-items: center;
   transition: background-color 1s;
 }
-.sirle:hover {
+.services_table_circle:hover {
   transition: background-color 1s;
   background-color: #f44336;
 }
-
-.vetka {
+.services_table_circle img {
+  position: absolute;
+  margin-top: -2px;
+  margin-left: 1px;
+}
+.services_table_vetka {
   width: 16px;
   height: 28px;
-  position: absolute;
-  margin-top: -2px;
-  margin-left: 1px;
 }
-
-.arrow {
+.services_table_arrow {
   width: 23px;
   height: 23px;
-  position: absolute;
-  margin-top: -2px;
-  margin-left: 1px;
 }
-
-.baks {
+.services_table_baks {
   width: 15px;
   height: 27px;
-  position: absolute;
-  margin-top: -2px;
-  margin-left: 1px;
 }
-
-.home {
+.services_table_home {
   width: 26px;
   height: 24px;
-  position: absolute;
-  margin-top: -2px;
-  margin-left: 1px;
 }
-
-.poll {
+.services_table_poll {
   width: 22px;
   height: 22px;
-  position: absolute;
-  margin-top: -2px;
-  margin-left: 1px;
 }
-
-.settings {
+.services_table_settings {
   width: 23px;
   height: 23px;
-  position: absolute;
-  margin-top: -2px;
-  margin-left: 1px;
 }
 
-/**=====================конец кругов====================**/
-.services_table_1 {
-  text-align: end;
-  width: 348px;
-  padding-right: 66px;
-}
-
-.services_table_2 {
-  width: 348px;
-  padding-left: 68px;
-}
-
-.spase_services {
-  width: 90px;
-}
-
-/**====================блок4=================**/
 .gallery {
   height: 889px;
+  padding-top: 93px;
+}
+.gallery_header {
+  margin-left: 859px;
+}
+.gallery_header_text {
+  font-family: "Poppins", sans-serif;
+  color: #f44336;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 .block6 {
   height: 537px;
-  background-image: url(image/block6Fon.gif);
+  background-image: url(../image/block6Fon.gif);
   background-repeat: no-repeat;
 }
 
@@ -340,7 +395,7 @@ body {
 
 .form {
   height: 313px;
-  background-image: url(image/hederFon1.gif);
+  background-image: url(../image/hederFonSmall.gif);
   background-repeat: no-repeat;
 }
 

@@ -12,13 +12,15 @@ a
   text-decoration: none
 
 body
-  font-family: 'Poppins', sans-serif
+  //font-family: 'Open Sans', sans-serif
+  //font-family: 'Poppins', sans-serif
+  font-family: 'Roboto Condensed', sans-serif
 
 .header
   margin: 0 auto
   width: 1920px
   height: 725px
-  background-image: url(/image/hederFon.gif)
+  background-image: url(../image/hederFonBig.gif)
   background-repeat: no-repeat
   background-size: cover
   padding-top: 13px
@@ -27,7 +29,7 @@ body
   box-sizing: border-box
   &_background
     height: 83px
-    background-image: url(/image/menu_fon.png)
+    background-image: url(../image/menu_fon.png)
     align-items: center
     justify-content: center
   &_info
@@ -37,6 +39,7 @@ body
       height: 45px
       font-weight: 500
       &_a
+        font-family: 'Poppins', sans-serif
         color: #ffffff
       &_1
         font-size: 36px
@@ -49,21 +52,29 @@ body
         line-height: 18px
         margin-left: 2px
     &_tel
-      margin-left: 104px
+      margin-left: 154px
       justify-content: center
       align-items: center
+      &:hover &_number
+        transition: color 0.5s
+        color: #000000
       &_img
         width: 17px
         height: 25px
-        margin-right: 13px
+        margin-right: 14px
       &_number
         color: #ffffff
         font-size: 17px
         font-weight: 400
+        padding-top: 2px
+        transition: color 0.5s
     &_email
       margin-left: 39px
       justify-content: center
       align-items: center
+      &:hover &_address
+        transition: color 0.5s
+        color: #000000
       &_img
         width: 25px
         height: 19px
@@ -73,6 +84,7 @@ body
         color: #ffffff
         font-size: 17px
         font-weight: 400
+        transition: color 0.5s
     &_search
       margin-left: 100px
       justify-content: center
@@ -83,6 +95,8 @@ body
         background: none
         border: 1px solid #ffffff
         padding-left: 16px
+        &:hover
+          box-shadow: 1px 1px 1px 0 #ffffff
       &_button
         text-align: center
         width: 50px
@@ -90,62 +104,116 @@ body
         background: none
         border: 1px solid #ffffff
         margin-left: -1px
-
+        &:hover
+          cursor: pointer
+          box-shadow: 1px 1px 1px 0 #ffffff
+        & i
+          color: #ffffff
 
 .menu
-  text-align: center
-  margin-top: 32px
+  height: 78px
+  border-bottom: 1px solid #ffffff
+  align-items: center
+  justify-content: center
+  &_ul
+    height: 100%
   &_list
-    display: inline-block
+    list-style-type: none
+    height: 100%
   &_link
+    display: flex
+    align-items: center
     color: #000000
     font-size: 17px
     font-weight: 400
     letter-spacing: -1px
     padding: 0 16px
-    transition: color 0.5s
+    transition: color 0.5s, border-bottom 0.5s
+    height: 100%
+    border-bottom: 3px solid transparent
     &:hover
-      transition: color 0.5s
+      transition: color 0.5s, border-bottom 0.5s
       color: #ffffff
+      border-bottom: 3px solid #ffffff
 
+.header_text
+  text-align: center
+  margin-top: 130px
+  &_nunc
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    padding-bottom: 16px
+  &_bloc
+    width: 80px
+    height: 2px
+    background-color: #ffffff
+    margin-left: 920px
+    margin-bottom: 60px
+  &_morbi
+    font-family: 'Poppins', sans-serif
+    color: #ffffff
+    font-size: 60px
+    font-weight: 500
+
+.social
+  margin-top: 60px
+  justify-content: center
+  &_circle
+    height: 40px
+    width: 40px
+    border: 2px solid #ffffff
+    border-radius: 50px
+    margin-right: 12px
+    transition: border-color 0.5s
+    &:hover
+      transition: border-color 0.5s
+      border: 2px solid #000000
+    &_ico
+      height: 100%
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      color: #ffffff
+      font-size: 18px
+      transition: color 0.5s
+      &:hover
+        transition: color 0.5s
+        color: #000000
 
 .main
   margin: 0 auto
   width: 1920px
 
-
-/**=============блок2==============**/
-.about_Us
-  height: 500px
+.about_us
+  min-height: 500px
   display: flex
   justify-content: center
   padding-top: 81px
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
-  .text_about_Us
+  &_text
     width: 399px
-    height: 266px
-    margin-right: 33px
-    margin-top: 14px
-  & h2
-    color: #f44336
-    font-size: 36px
-    font-weight: 500
-    margin: 0 0
-  & p
-    color: #999999
-    font-size: 12px
-    font-weight: 300
-    letter-spacing: 0.12px
-    line-height: 24px
+    min-height: 266px
+    margin: 14px 33px 50px 0
+    &_h2
+      font-family: 'Poppins', sans-serif
+      color: #f44336
+      font-size: 36px
+      font-weight: 500
+      margin: 0 0
+    &_p
+      color: #999999
+      font-size: 12px
+      font-weight: 300
+      letter-spacing: 0.12px
+      line-height: 24px
+  &_img_style
+    width: 540px
+    height: 338px
 
-.about_Us_img img
-  width: 540px
-  height: 338px
-
-
-/**===============================блок3================**/
 
 .services
   height: 762px
@@ -155,151 +223,93 @@ body
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
+  &_header
+    font-family: 'Poppins', sans-serif
+    color: #f44336
+    font-size: 36px
+    font-weight: 500
+    margin-bottom: 87px
+  &_table
+    width: 990px
+    height: 448px
+    border-collapse: collapse
+    &_column
+      width: 90px
+    &_cell_1
+      text-align: end
+      width: 348px
+      padding-right: 66px
+    &_cell_2
+      width: 348px
+      padding-left: 68px
+    &_h3
+      font-family: 'Poppins', sans-serif
+      padding-bottom: 18px
+      color: #000000
+      font-size: 16px
+      font-weight: 500
+      letter-spacing: 0.16px
+    &_p
+      color: #999999
+      font-size: 12px
+      font-weight: 400
+      letter-spacing: 0.12px
+    &_row_1
+      vertical-align: top
+      &_h3
+        padding-top: 4px
+    &_row_3
+      vertical-align: bottom
+      &_p
+        padding-bottom: 11px
+    &_circle
+      display: flex
+      border: 1px solid #acacac
+      background-color: #e1e1e1
+      height: 100px
+      width: 100px
+      border-radius: 50%
+      position: relative
+      justify-content: center
+      align-items: center
+      transition: background-color 1s
+      &:hover
+        transition: background-color 1s
+        background-color: #f44336
+      & img
+        position: absolute
+        margin-top: -2px
+        margin-left: 1px
+    &_vetka
+      width: 16px
+      height: 28px
+    &_arrow
+      width: 23px
+      height: 23px
+    &_baks
+      width: 15px
+      height: 27px
+    &_home
+      width: 26px
+      height: 24px
+    &_poll
+      width: 22px
+      height: 22px
+    &_settings
+      width: 23px
+      height: 23px
 
-
-.services_text
-  color: #f44336
-  font-size: 36px
-  font-weight: 500
-  margin-bottom: 87px
-
-
-.services_table
-  width: 990px
-  height: 448px
-  border-collapse: collapse
-
-
-.services_table td
-  padding-top: 0
-  padding-bottom: 0
-
-
-.services_table td h3
-  padding-bottom: 18px
-
-
-.cild1_table
-  vertical-align: top
-
-
-.cild2_table
-  vertical-align: bottom
-
-
-.cild1_h3
-  padding-top: 4px
-
-
-.cild3_p
-  padding-bottom: 11px
-
-
-.services_table td p
-  color: #999999
-  font-size: 12px
-  font-weight: 400
-  letter-spacing: 0.12px
-
-
-.services_table td h3
-  color: #000000
-  font-size: 16px
-  font-weight: 500
-  letter-spacing: 0.16px
-
-
-/**===================круги 3 блок===============**/
-.sirle
-  display: flex
-  border: 1px solid #acacac
-  background-color: #e1e1e1
-  height: 100px
-  width: 100px
-  border-radius: 50%
-  position: relative
-  justify-content: center
-  align-items: center
-  transition: background-color 1s
-  &:hover
-    transition: background-color 1s
-    background-color: #f44336
-
-
-.vetka
-  width: 16px
-  height: 28px
-  position: absolute
-  margin-top: -2px
-  margin-left: 1px
-
-
-.arrow
-  width: 23px
-  height: 23px
-  position: absolute
-  margin-top: -2px
-  margin-left: 1px
-
-
-.baks
-  width: 15px
-  height: 27px
-  position: absolute
-  margin-top: -2px
-  margin-left: 1px
-
-
-.home
-  width: 26px
-  height: 24px
-  position: absolute
-  margin-top: -2px
-  margin-left: 1px
-
-
-
-.poll
-  width: 22px
-  height: 22px
-  position: absolute
-  margin-top: -2px
-  margin-left: 1px
-
-
-.settings
-  width: 23px
-  height: 23px
-  position: absolute
-  margin-top: -2px
-  margin-left: 1px
-
-
-
-
-
-/**=====================конец кругов====================**/
-
-.services_table_1
-  text-align: end
-  width: 348px
-  padding-right: 66px
-
-
-.services_table_2
-  width: 348px
-  padding-left: 68px
-
-
-.spase_services
-  width: 90px
-
-
-/**====================блок4=================**/
 
 .gallery
   height: 889px
-
+  padding-top: 93px
+  &_header
+    margin-left: 859px
+    &_text
+      font-family: 'Poppins', sans-serif
+      color: #f44336
+      font-size: 36px
+      font-weight: 500
 
 .block6
   height: 537px
@@ -318,7 +328,7 @@ body
 
 .form
   height: 313px
-  background-image: url(../image/hederFon1.gif)
+  background-image: url(../image/hederFonSmall.gif)
   background-repeat: no-repeat
 
 
