@@ -2,6 +2,10 @@
   margin: 0
   padding: 0
 
+.container
+  margin: 0 auto
+  width: 1920px
+
 .bxbb
   box-sizing: border-box
 
@@ -15,6 +19,15 @@ body
   //font-family: 'Open Sans', sans-serif
   //font-family: 'Poppins', sans-serif
   font-family: 'Roboto Condensed', sans-serif
+
+.button
+  background-color: #f44336
+  transition: background-color 1s, color 1s
+  justify-content: center
+  align-items: center
+  color: #ffffff
+  font-size: 14px
+  font-weight: 500
 
 .header
   margin: 0 auto
@@ -182,10 +195,6 @@ body
         transition: color 0.5s
         color: #000000
 
-.main
-  margin: 0 auto
-  width: 1920px
-
 .about_us
   min-height: 500px
   display: flex
@@ -213,7 +222,6 @@ body
   &_img_style
     width: 540px
     height: 338px
-
 
 .services
   height: 762px
@@ -299,22 +307,111 @@ body
       width: 23px
       height: 23px
 
-
 .gallery
-  height: 889px
+  font-family: 'Poppins', sans-serif
+  min-height: 889px
   padding-top: 93px
   &_header
-    margin-left: 859px
+    margin: 0 0 62px 859px
     &_text
-      font-family: 'Poppins', sans-serif
       color: #f44336
       font-size: 36px
       font-weight: 500
+  &_list
+    display: flex
+    width: 1210px
+    margin: 0 0 180px 374px
+    flex-wrap: wrap
+    &_image
+      width: 270px
+      height: 376px
+      border: 1px solid #acacac
+    &_item
+      margin: 30px 15px 0
+      &_text
+        height: 105px
+        background-color: #f7f7f7
+        position: relative
+        &_h3
+          text-align: center
+          color: #000000
+          font-size: 14px
+          font-weight: 700
+          padding-top: 18px
+          line-height: 20px
+        &_button
+          position: absolute
+          width: 130px
+          height: 30px
+          bottom: 13px
+          left: 70px
+          &:hover
+            transition: background-color 1s, color 1s
+            background-color: #e1e1e1
+            color: #f44336
 
-.block6
+
+
+
+.testimonial
   height: 537px
   background-image: url(../image/block6Fon.gif)
   background-repeat: no-repeat
+  padding-top: 86px
+  &_header
+    font-family: 'Poppins', sans-serif
+    color: #ffffff
+    font-size: 48px
+    font-weight: 500
+    text-align: center
+  &_image
+    text-align: center
+    margin-top: 90px
+  &_text
+    margin-left: 377px
+    margin-top: 50px
+    &_arrow
+      width: 37px
+      height: 37px
+      border: 1px solid #ffffff
+      justify-content: center
+      align-items: center
+      background-color: transparent
+      transition: background-color 1s
+      &:hover
+        transition: background-color 1s
+        background-color: #ffffff
+      &:hover &_fas
+        transition: color 1s
+        color: #000000
+      &_fas
+        color: #ffffff
+        transition: color 1s
+    &_description
+      width: 936px
+      height: 136px
+      margin: 0 80px
+      overflow: hidden
+      &_test
+        position: relative
+        left: 0
+        transition: left 1s
+        width: 2808px
+      &_block
+        width: 936px
+        text-align: center
+      &_text
+        color: #ffffff
+        font-size: 14px
+        font-weight: 100
+      &_signature
+        font-size: 16px
+        font-weight: 100
+        color: #ffffff
+        margin-top: 40px
+        &_name
+          font-family: 'Poppins', sans-serif
+          font-weight: 600
 
 
 .block7
