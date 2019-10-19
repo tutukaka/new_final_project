@@ -26,7 +26,27 @@ class CatalogItem {
                 id: 4,
                 name: 'World Of Warcraft:<br>Wrath Of The Linch King',
                 image: 'wow.jpg'
-            }
+            },
+            {
+                id: 1,
+                name: 'Assasin’s Creed: Rogue',
+                image: 'assasin.jpg'
+            },
+            {
+                id: 2,
+                name: 'Tomb Raider',
+                image: 'tombraider.jpg'
+            },
+            {
+                id: 3,
+                name: 'Ryse: Son Of Rome',
+                image: 'ryse.jpg'
+            },
+            {
+                id: 4,
+                name: 'World Of Warcraft:<br>Wrath Of The Linch King',
+                image: 'wow.jpg'
+            },
         ];
         return this.items
     }
