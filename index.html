@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="javaScript/catalog.js" defer></script>
     <script src="javaScript/slider.js" defer></script>
+    <script src="javaScript/team_directory.js" defer></script>
 </head>
 
 <body>
 <div class="header bxbb">
     <div class="header_background flex">
         <div class="header_info flex">
-            <div class="header_info_logo">
+            <div id="top" class="header_info_logo">
                 <a class="header_info_logo_a" href="#">
                     <p class="header_info_logo_1">Historical</p>
                     <p class="header_info_logo_2">games</p>
@@ -75,15 +76,15 @@
     </div>
     <div class="social flex">
         <div class="social_circle"><a class="social_circle_ico" href="#"><i class="fab fa-facebook-f"></i></a></div>
-        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="social_circle_ico fab fa-twitter"></i></a></div>
-        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="social_circle_ico fas fa-rss"></i></a></div>
-        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="social_circle_ico fab fa-vk"></i></a></div>
+        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="fab fa-twitter"></i></a></div>
+        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="fas fa-rss"></i></a></div>
+        <div class="social_circle"><a class="social_circle_ico" href="#"><i class="fab fa-vk"></i></a></div>
     </div>
 </div>
 <div class="container">
     <div class="about_us">
         <div class="about_us_text">
-            <h2 class="about_us_text_h2">About Us!</h2>
+            <h2 class="about_us_text_h2 header__text">About Us!</h2>
             <p class="about_us_text_p">Nemo enim ipsam voluptatem quia voluptas sit
                 aspernatur aut odit aut fugit, sed quia consequuntur
                 magni dolores eos qui ratione voluptatem sequi nesciunt.
@@ -102,7 +103,7 @@
         </div>
     </div>
     <div class="services">
-        <h2 class="services_header">Services</h2>
+        <h2 class="services_header header__text">Services</h2>
         <table class="services_table">
             <tr class="services_table_row_1">
                 <td class="services_table_cell_1">
@@ -158,20 +159,21 @@
             </tr>
         </table>
     </div>
-    <div class="gallery bxbb">
-        <div class="gallery_header bxbb">
-            <p class="gallery_header_text">Our Gallery</p>
+    <div class="catalog bxbb">
+        <div class="catalog_header bxbb">
+            <p class="catalog_header_text header__text">Our Gallery</p>
         </div>
-        <div class="gallery_list flex"></div>
+        <div class="catalog_list flex"></div>
     </div>
     <div class="testimonial bxbb">
         <div class="testimonial_header"><p class="testimonial_header_p">Testimonial</p></div>
         <div class="testimonial_image">
             <img class="testimonial_image_settings" src="image/ico_testimonial.png" alt="ico"></div>
         <div class="testimonial_text flex">
-            <div class="flex testimonial_text_arrow" ><i data-atr="left" class="testimonial_text_arrow_fas fas fa-chevron-left"></i></div>
+            <div data-atr="left" class="flex testimonial_text_arrow" >
+                <i data-atr="left" class="testimonial_text_arrow_fas fas fa-chevron-left"></i></div>
             <div class="testimonial_text_description">
-                <div class="testimonial_text_description_test flex">
+                <div class="testimonial_text_description_move flex">
                 <div class="testimonial_text_description_block"><p class="testimonial_text_description_text">
                     Donec feugiat tellus sem, laoreet iaculis orci lobortis vel.
                     Sed sed luctus orci, at&nbsp;lacinia risus. Ut&nbsp;porttitor ante ac
@@ -217,109 +219,199 @@
                     <span class="testimonial_text_description_signature_name">
                         JOHN SMITH </span>- FOUNDER</p>
             </div></div></div>
-            <div class="flex testimonial_text_arrow" ><i data-atr="right" class="testimonial_text_arrow_fas fas fa-chevron-right"></i></div>
+            <div  data-atr="right" class="flex testimonial_text_arrow" >
+                <i  data-atr="right" class="testimonial_text_arrow_fas fas fa-chevron-right"></i></div>
         </div>
     </div>
-    <div class="tasks">
-        <div class="tasks_header"><p class="tasks_header_text">News &amp;&nbsp;Events</p></div>
+    <div class="tasks bxbb">
+        <div class="tasks_header"><p class="tasks_header_text header__text">News &amp;&nbsp;Events</p></div>
         <div class="tasks_block flex">
             <div class="tasks_block_news">
                 <div class="tasks_block_news_header">
                     <p class="tasks_block_news_header_text">Latest News</p></div>
-                <div class="tasks_block_news_content flex">
-                    <div class="tasks_block_news_content_data">
-                        <p>15</p>
-                        <p>June<br>2016</p>
+                <a href="#" class="tasks_block_news_content flex">
+                    <div class="tasks_block_news_content_data bxbb">
+                        <p class="tasks_block_news_content_data_day">15</p>
+                        <p class="tasks_block_news_content_data_month_year">June<br>2016</p>
                     </div>
-                    <div class="tasks_block_news_content_text">
-                        <p>Fugiat Quo Voluptas</p>
-                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate
+                    <div class="tasks_block_news_content_text bxbb">
+                        <p class="tasks_block_news_content_text_header">Fugiat Quo Voluptas</p>
+                        <p class="tasks_block_news_content_text_content">Quis autem vel eum iure reprehenderit qui in ea voluptate
                             velit esse.</p>
                     </div>
-                </div>
-                <div class="tasks_block_news_content flex">
-                    <div class="tasks_block_news_content_data">
-                        <p>18</p>
-                        <p>June<br>2016</p>
+                </a>
+                <a href="#" class="tasks_block_news_content flex">
+                    <div class="tasks_block_news_content_data bxbb">
+                        <p class="tasks_block_news_content_data_day">18</p>
+                        <p class="tasks_block_news_content_data_month_year">June<br>2016</p>
                     </div>
-                    <div class="tasks_block_news_content_text">
-                        <p>FugQui In Ea Voluptate</p>
-                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate
+                    <div class="tasks_block_news_content_text bxbb">
+                        <p class="tasks_block_news_content_text_header">FugQui In Ea Voluptate</p>
+                        <p class="tasks_block_news_content_text_content">Quis autem vel eum iure reprehenderit qui in ea voluptate
                             velit esse.</p>
                     </div>
-                </div>
-                <div class="tasks_block_news_content flex">
-                    <div class="tasks_block_news_content_data">
-                        <p>20</p>
-                        <p>June<br>2016</p>
+                </a>
+                <a href="#" class="tasks_block_news_content flex">
+                    <div class="tasks_block_news_content_data bxbb">
+                        <p class="tasks_block_news_content_data_day">20</p>
+                        <p class="tasks_block_news_content_data_month_year">June<br>2016</p>
                     </div>
-                    <div class="tasks_block_news_content_text">
-                        <p>Autem Vel Eum Iure</p>
-                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate
+                    <div class="tasks_block_news_content_text bxbb">
+                        <p class="tasks_block_news_content_text_header">Autem Vel Eum Iure</p>
+                        <p class="tasks_block_news_content_text_content">Quis autem vel eum iure reprehenderit qui in ea voluptate
                             velit esse.</p>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="tasks_block_events">
                 <div class="tasks_block_events_header flex">
                     <div class="tasks_block_events_header_text">Featured Events</div>
                     <div class="tasks_block_events_header_arrow flex">
-                        <div class="tasks_block_events_header_arrow_button_left">
+                        <div data-atr="left" class="tasks_block_events_header_arrow_button
+                        tasks_block_events_header_arrow_button_left flex">
                             <i data-atr="left" class="fas fa-chevron-left"></i></div>
-                        <div class="tasks_block_events_header_arrow_button_right">
+                        <div data-atr="right" class="tasks_block_events_header_arrow_button
+                        tasks_block_events_header_arrow_button_right flex">
                             <i data-atr="right" class="fas fa-chevron-right"></i></div>
                     </div>
                 </div>
-                <div class="tasks_block_events_gallery flex">
-                    <div class="tasks_block_events_gallery_slider">
-                        <img src="image/g7.jpg" alt=""><img src="image/g9.jpg" alt=""><img src="image/g3.jpg" alt="">
+                <div class="tasks_block_events_gallery">
+                    <div class="tasks_block_events_gallery_slider flex">
+                        <a class="flex" href="#"><img class="tasks_block_events_gallery_slider_img"
+                                         src="image/g7.jpg" alt="photo"></a>
+                        <a class="flex" href="#"><img class="tasks_block_events_gallery_slider_img"
+                                         src="image/g9.jpg" alt="photo"></a>
+                        <a class="flex" href="#"><img class="tasks_block_events_gallery_slider_img"
+                                         src="image/g3.jpg" alt="photo"></a>
+                        <a class="flex" href="#"><img class="tasks_block_events_gallery_slider_img"
+                                         src="image/g1.jpg" alt="photo"></a>
+                        <a class="flex" href="#"><img class="tasks_block_events_gallery_slider_img"
+                                         src="image/g2.jpg" alt="photo"></a>
+                        <a class="flex" href="#"><img class="tasks_block_events_gallery_slider_img"
+                                         src="image/g4.jpg" alt="photo"></a>
+                        <a class="flex" href="#"><img class="tasks_block_events_gallery_slider_img"
+                                         src="image/g5.jpg" alt="photo"></a>
                     </div>
                 </div>
                 <ul class="tasks_block_events_ul">
                     <li class="tasks_block_events_ul_list">
-                        <p><span>+</span>Assumenda Est Cliche Reprehenderit</p>
-                        <p>Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
+                        <div class="tasks_block_events_ul_list_header flex">
+                            <p><span class="tasks_block_events_ul_list_header_mark">+</span>Assumenda Est Cliche Reprehenderit</p></div>
+                        <div class="tasks_block_events_ul_list_text flex">
+                            <p>Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
                             typesetting industry. Lorem Ipsum has been the
                             industry&rsquo;s standard dummy text ever since the 1500s,
                             when an&nbsp;unknown printer took a&nbsp;galley of&nbsp;type and
-                            scrambled it&nbsp;to&nbsp;make a&nbsp;type specimen book.</p>
+                            scrambled it&nbsp;to&nbsp;make a&nbsp;type specimen book.</p></div>
                     </li>
                     <li class="tasks_block_events_ul_list">
-                        <p><span>+</span> Assumenda Est Cliche Reprehenderit</p>
-                        <p>Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
+                        <div class="tasks_block_events_ul_list_header flex">
+                            <p><span class="tasks_block_events_ul_list_header_mark">+</span> Assumenda Est Cliche Reprehenderit</p></div>
+                        <div class="tasks_block_events_ul_list_text flex">
+                            <p>Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
                             typesetting industry. Lorem Ipsum has been the
                             industry&rsquo;s standard dummy text ever since the 1500s,
                             when an&nbsp;unknown printer took a&nbsp;galley of&nbsp;type and
-                            scrambled it&nbsp;to&nbsp;make a&nbsp;type specimen book.</p>
+                            scrambled it&nbsp;to&nbsp;make a&nbsp;type specimen book.</p></div>
                     </li>
                     <li class="tasks_block_events_ul_list">
-                        <p><span>+</span>Assumenda Est Cliche Reprehenderit</p>
-                        <p>Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
+                        <div class="tasks_block_events_ul_list_header flex">
+                            <p><span class="tasks_block_events_ul_list_header_mark">+</span>Assumenda Est Cliche Reprehenderit</p></div>
+                        <div class="tasks_block_events_ul_list_text flex">
+                            <p>Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
                             typesetting industry. Lorem Ipsum has been the
                             industry&rsquo;s standard dummy text ever since the 1500s,
                             when an&nbsp;unknown printer took a&nbsp;galley of&nbsp;type and
-                            scrambled it&nbsp;to&nbsp;make a&nbsp;type specimen book.</p>
+                            scrambled it&nbsp;to&nbsp;make a&nbsp;type specimen book.</p></div>
                     </li>
                     <li class="tasks_block_events_ul_list">
-                        <p><span>+</span>Assumenda Est Cliche Reprehenderit</p>
-                        <p>Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
+                        <div class="tasks_block_events_ul_list_header flex">
+                            <p><span class="tasks_block_events_ul_list_header_mark">+</span>Assumenda Est Cliche Reprehenderit</p></div>
+                        <div class="tasks_block_events_ul_list_text flex">
+                            <p>Lorem Ipsum is&nbsp;simply dummy text of&nbsp;the printing and
                             typesetting industry. Lorem Ipsum has been the
                             industry&rsquo;s standard dummy text ever since the 1500s,
                             when an&nbsp;unknown printer took a&nbsp;galley of&nbsp;type and
-                            scrambled it&nbsp;to&nbsp;make a&nbsp;type specimen book.</p>
+                            scrambled it&nbsp;to&nbsp;make a&nbsp;type specimen book.</p></div>
                     </li>
                 </ul>
             </div>
 
         </div>
     </div>
-    <div class="our_team"></div>
-    <div class="form"></div>
-    <div class="contacts"></div>
-    <div class="maps"></div>
+    <div class="our_team">
+        <a class="flex" href="#top"><img class="our_team_arrow_back" src="image/arrow_back.png" alt="ico"></a>
+        <div class="our_team_header">
+            <p class="our_team_header_text header__text">Our Team</p>
+        </div>
+        <div class="our_team_list flex"></div>
+    </div>
+    <div class="form">
+        <div class="form_header bxbb">
+            <h3 class="form_header_text header__text">Subscribe with Us</h3>
+        </div>
+        <form  action="#" class="form_label flex">
+            <label>
+                <input class="form_label_input bxbb" type="email" placeholder="Email">
+            </label>
+            <input class="button form_label_button flex" type="submit" value="Subscribe">
+        </form>
+    </div>
+    <div class="contacts">
+        <div class="contacts_us">
+            <div class="contacts_us_header">
+                <h3 class="contacts_us_header_text header__text">Contact Us</h3>
+            </div>
+            <div class="contacts_us_description flex">
+                <div class="contacts_us_description_our">
+                    <h2 class="contacts_us_description_our_header">Get in touch with us</h2>
+                    <p class="contacts_us_description_our_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,sheets
+                        containing Lorem Ipsum passages sed&nbsp;do, At&nbsp;vero eos et&nbsp;accusamus et
+                        iusto odio digs qui blanditiis
+                        <br>
+                        <br>
+                        Leningradsky AVE 39, BLDG 79
+                        MOSCOW 125167, Russia
+                        <br>
+                        <br>
+                        Telephone : +00 111 222 3333
+                        <br>
+                        <br>
+                        FAX : +1 888 888 4444
+                        <br>
+                        <br>
+                        Email : <span class="contacts_us_description_our_text_email">
+                                                                mail@example.com</span></p>
+                </div>
+                <div class="contacts_us_description_user">
+                    <form class="contacts_us_description_user_form" action="#">
+                        <label>
+                            <input class="contacts_us_description_user_form_name bxbb"
+                                   placeholder="Name" name="user_data" type="text">
+                            <input class="contacts_us_description_user_form_email bxbb"
+                                   placeholder="Email" name="user_data" type="email">
+                            <textarea class="contacts_us_description_user_form_text bxbb"
+                                      placeholder="Massege" name="user_data" cols="30" rows="10"></textarea>
+                            <input class="button contacts_us_description_user_form_button flex" type="submit" value="SUBMIT">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contacts_map">
+            <div class="contacts_map_header">
+                <h3 class="contacts_map_header_text header__text">Route Map</h3>
+            </div>
+            <div class="contacts_map_position flex">
+                <iframe class="contacts_map_size" src="https://yandex.ru/map-widget/v1/-/CGDKyKZX" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="footer">
-    <h3>&copy;&nbsp;2017 Историческе Игры. Все права защищены</h3>
+    <a class="flex" href="#top"><img class="footer_arrow_back" src="image/arrow_back.png" alt="ico"></a>
+    <h3 class="footer_h3">&copy;&nbsp;2017 Историческе Игры. Все права защищены</h3>
 </div>
 </body>
 
