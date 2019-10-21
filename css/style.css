@@ -276,19 +276,17 @@ body {
 .services {
   height: 762px;
   background-color: #f7f7f7;
-  text-align: -webkit-center;
   padding-top: 92px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .services_header {
   margin-bottom: 87px;
+  text-align: center;
 }
 .services_table {
   width: 990px;
   height: 448px;
   border-collapse: collapse;
+  margin: 0 auto;
 }
 .services_table_column {
   width: 90px;
