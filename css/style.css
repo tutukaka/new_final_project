@@ -42,6 +42,11 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
+.button:hover {
+  transition: background-color 1s, color 1s;
+  background-color: #e1e1e1;
+  color: #f44336;
+}
 
 .header {
   margin: 0 auto;
@@ -471,7 +476,7 @@ body {
 }
 .testimonial_text_description_move {
   position: relative;
-  left: 0;
+  left: -936px;
   transition: left 1s;
   width: 2808px;
 }
@@ -602,7 +607,7 @@ body {
   position: relative;
   width: 1330px;
   transition: left 1s;
-  left: 0;
+  left: -380px;
 }
 .tasks_block_events_gallery_slider_img {
   width: 189px;

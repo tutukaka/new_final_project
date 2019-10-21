@@ -34,6 +34,10 @@ body
   font-size: 14px
   font-weight: 500
   cursor: pointer
+  &:hover
+    transition: background-color 1s, color 1s
+    background-color: #e1e1e1
+    color: #f44336
 
 .header
   margin: 0 auto
@@ -384,7 +388,7 @@ body
       overflow: hidden
       &_move
         position: relative
-        left: 0
+        left: -936px
         transition: left 1s
         width: 2808px
       &_block
@@ -490,7 +494,7 @@ body
           position: relative
           width: 1330px
           transition: left 1s
-          left: 0
+          left: -380px
           &_img
             width: 189px
             height: 120px
@@ -601,7 +605,6 @@ body
       justify-content: center
       align-items: center
       border: none
-
 
 .contacts
   height: 1111px

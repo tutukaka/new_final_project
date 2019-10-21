@@ -1,6 +1,6 @@
 "use strict";
 
-let testimonial = 0;
+let testimonial = -936;
 const sliderTestimonial = document.querySelector('.testimonial_text_description_move');
 document.querySelector('.testimonial_text').addEventListener('click',
     (event) => {
@@ -22,7 +22,7 @@ document.querySelector('.testimonial_text').addEventListener('click',
             }
 });
 
-let tasksGallery = 0;
+let tasksGallery = -380;
 const sliderTasksGallery = document.querySelector('.tasks_block_events_gallery_slider');
 document.querySelector('.tasks_block_events_header_arrow').addEventListener('click',
     (event) => {
