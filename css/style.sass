@@ -25,6 +25,7 @@ body
   color: #f44336
   font-size: 36px
   font-weight: 900
+
 .button
   background-color: #f44336
   transition: background-color 1s, color 1s
@@ -46,10 +47,11 @@ body
   background-image: url(../image/hederFonBig.gif)
   background-repeat: no-repeat
   background-size: cover
-  padding-top: 13px
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
+  &__all
+    padding-top: 13px
   &_background
     height: 83px
     background-image: url(../image/menu_fon.png)
@@ -328,13 +330,20 @@ body
         height: 105px
         background-color: #f7f7f7
         position: relative
+        text-align: center
         &_h3
-          text-align: center
           color: #000000
           font-size: 14px
           font-weight: 700
           padding-top: 18px
           line-height: 20px
+          text-transform: uppercase
+        &_p
+          color: #000000
+          font-size: 14px
+          font-weight: 700
+          line-height: 20px
+          text-transform: capitalize
         &_button
           position: absolute
           width: 130px
@@ -671,9 +680,6 @@ body
       width: 1170px
       height: 298px
 
-
-
-/**===========Подвал=========**/
 .footer
   margin: 0 auto
   width: 1920px

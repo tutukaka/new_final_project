@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Игры</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
@@ -16,58 +16,60 @@
 
 <body>
 <div class="header bxbb">
-    <div class="header_background flex">
-        <div class="header_info flex">
-            <div id="top" class="header_info_logo">
-                <a class="header_info_logo_a" href="#">
-                    <p class="header_info_logo_1">Historical</p>
-                    <p class="header_info_logo_2">games</p>
-                </a>
+    <div class="header__all">
+        <div class="header_background flex">
+            <div class="header_info flex">
+                <div id="top" class="header_info_logo">
+                    <a class="header_info_logo_a" href="#">
+                        <p class="header_info_logo_1">Historical</p>
+                        <p class="header_info_logo_2">games</p>
+                    </a>
+                </div>
+                <div class="header_info_tel flex">
+                    <a class="flex" href="#">
+                        <img class="header_info_tel_img" src="image/tel_logo.png" alt="ico">
+                        <p class="header_info_tel_number">+123 456 7890</p>
+                    </a>
+                </div>
+                <div class="header_info_email flex">
+                    <a class="flex" href="#">
+                        <img class="header_info_email_img" src="image/email_logo.png" alt="ico">
+                        <p class="header_info_email_address">info@example.com</p>
+                    </a>
+                </div>
+                <form class="header_info_search flex">
+                    <label>
+                        <input class="header_info_search_input bxbb" type="text" placeholder="Search">
+                    </label>
+                    <button class="header_info_search_button"><i class="fas fa-search"></i></button>
+                </form>
             </div>
-            <div class="header_info_tel flex">
-                <a class="flex" href="#">
-                    <img class="header_info_tel_img" src="image/tel_logo.png" alt="ico">
-                    <p class="header_info_tel_number">+123 456 7890</p>
-                </a>
-            </div>
-            <div class="header_info_email flex">
-                <a class="flex" href="#">
-                    <img class="header_info_email_img" src="image/email_logo.png" alt="ico">
-                    <p class="header_info_email_address">info@example.com</p>
-                </a>
-            </div>
-            <form class="header_info_search flex">
-                <label>
-                    <input class="header_info_search_input bxbb" type="text" placeholder="Search">
-                </label>
-                <button class="header_info_search_button"><i class="fas fa-search"></i></button>
-            </form>
         </div>
-    </div>
-    <div class="menu flex">
-        <ul class="menu_ul flex">
-            <li class="menu_list">
-                <a class="menu_link" href="#">Home</a>
-            </li>
-            <li class="menu_list">
-                <a class="menu_link" href="#">About</a>
-            </li>
-            <li class="menu_list">
-                <a class="menu_link" href="#">Services</a>
-            </li>
-            <li class="menu_list">
-                <a class="menu_link" href="#">Gallery</a>
-            </li>
-            <li class="menu_list">
-                <a class="menu_link" href="#">News</a>
-            </li>
-            <li class="menu_list">
-                <a class="menu_link" href="#">Team</a>
-            </li>
-            <li class="menu_list">
-                <a class="menu_link" href="#">Contact Us</a>
-            </li>
-        </ul>
+        <div class="menu flex">
+            <ul class="menu_ul flex">
+                <li class="menu_list">
+                    <a class="menu_link" href="#">Home</a>
+                </li>
+                <li class="menu_list">
+                    <a class="menu_link" href="#">About</a>
+                </li>
+                <li class="menu_list">
+                    <a class="menu_link" href="#">Services</a>
+                </li>
+                <li class="menu_list">
+                    <a class="menu_link" href="catalog.html">Gallery</a>
+                </li>
+                <li class="menu_list">
+                    <a class="menu_link" href="#">News</a>
+                </li>
+                <li class="menu_list">
+                    <a class="menu_link" href="#">Team</a>
+                </li>
+                <li class="menu_list">
+                    <a class="menu_link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="header_text">
         <p class="header_text_nunc">Nunc eget nibh</p>
@@ -404,7 +406,7 @@
                 <h3 class="contacts_map_header_text header__text">Route Map</h3>
             </div>
             <div class="contacts_map_position flex">
-                <iframe class="contacts_map_size" src="https://yandex.ru/map-widget/v1/-/CGDKyKZX" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+                <iframe class="contacts_map_size" src="https://yandex.ru/map-widget/v1/-/CGDKyKZX"></iframe>
             </div>
         </div>
     </div>

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -55,10 +54,12 @@ body {
   background-image: url(../image/hederFonBig.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 13px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.header__all {
+  padding-top: 13px;
 }
 .header_background {
   height: 83px;
@@ -403,14 +404,22 @@ body {
   height: 105px;
   background-color: #f7f7f7;
   position: relative;
+  text-align: center;
 }
 .catalog_list_item_text_h3 {
-  text-align: center;
   color: #000000;
   font-size: 14px;
   font-weight: 700;
   padding-top: 18px;
   line-height: 20px;
+  text-transform: uppercase;
+}
+.catalog_list_item_text_p {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: capitalize;
 }
 .catalog_list_item_text_button {
   position: absolute;
@@ -824,7 +833,6 @@ body {
   height: 298px;
 }
 
-/**===========Подвал=========**/
 .footer {
   margin: 0 auto;
   width: 1920px;

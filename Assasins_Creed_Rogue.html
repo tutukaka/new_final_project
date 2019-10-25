@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница товара</title>
+    <meta charset="UTF-8">
+    <title>Каталог Игры</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javaScript/catalog.js" defer></script>
+</head>
+<body>
+<div class="header__all">
+    <div class="header_background flex">
+        <div class="header_info flex">
+            <div id="top" class="header_info_logo">
+                <a class="header_info_logo_a" href="#">
+                    <p class="header_info_logo_1">Historical</p>
+                    <p class="header_info_logo_2">games</p>
+                </a>
+            </div>
+            <div class="header_info_tel flex">
+                <a class="flex" href="#">
+                    <img class="header_info_tel_img" src="image/tel_logo.png" alt="ico">
+                    <p class="header_info_tel_number">+123 456 7890</p>
+                </a>
+            </div>
+            <div class="header_info_email flex">
+                <a class="flex" href="#">
+                    <img class="header_info_email_img" src="image/email_logo.png" alt="ico">
+                    <p class="header_info_email_address">info@example.com</p>
+                </a>
+            </div>
+            <form class="header_info_search flex">
+                <label>
+                    <input class="header_info_search_input bxbb" type="text" placeholder="Search">
+                </label>
+                <button class="header_info_search_button"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="menu flex">
+        <ul class="menu_ul flex">
+            <li class="menu_list">
+                <a class="menu_link" href="#">Home</a>
+            </li>
+            <li class="menu_list">
+                <a class="menu_link" href="#">About</a>
+            </li>
+            <li class="menu_list">
+                <a class="menu_link" href="#">Services</a>
+            </li>
+            <li class="menu_list">
+                <a class="menu_link" href="#">Gallery</a>
+            </li>
+            <li class="menu_list">
+                <a class="menu_link" href="#">News</a>
+            </li>
+            <li class="menu_list">
+                <a class="menu_link" href="#">Team</a>
+            </li>
+            <li class="menu_list">
+                <a class="menu_link" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="catalog bxbb">
+        <div class="catalog_header bxbb">
+            <p class="catalog_header_text header__text">Our Gallery</p>
+        </div>
+        <div class="catalog_list flex"></div>
+    </div>
+    <div class="contacts">
+        <div class="contacts_us">
+            <div class="contacts_us_header">
+                <h3 class="contacts_us_header_text header__text">Contact Us</h3>
+            </div>
+            <div class="contacts_us_description flex">
+                <div class="contacts_us_description_our">
+                    <h2 class="contacts_us_description_our_header">Get in touch with us</h2>
+                    <p class="contacts_us_description_our_text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,sheets
+                        containing Lorem Ipsum passages sed&nbsp;do, At&nbsp;vero eos et&nbsp;accusamus et
+                        iusto odio digs qui blanditiis
+                        <br>
+                        <br>
+                        Leningradsky AVE 39, BLDG 79
+                        MOSCOW 125167, Russia
+                        <br>
+                        <br>
+                        Telephone : +00 111 222 3333
+                        <br>
+                        <br>
+                        FAX : +1 888 888 4444
+                        <br>
+                        <br>
+                        Email : <span class="contacts_us_description_our_text_email">
+                                                                mail@example.com</span></p>
+                </div>
+                <div class="contacts_us_description_user">
+                    <form class="contacts_us_description_user_form" action="#">
+                        <label>
+                            <input class="contacts_us_description_user_form_name bxbb"
+                                   placeholder="Name" name="user_data" type="text">
+                            <input class="contacts_us_description_user_form_email bxbb"
+                                   placeholder="Email" name="user_data" type="email">
+                            <textarea class="contacts_us_description_user_form_text bxbb"
+                                      placeholder="Massege" name="user_data" cols="30" rows="10"></textarea>
+                            <input class="button contacts_us_description_user_form_button flex" type="submit" value="SUBMIT">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="contacts_map">
+            <div class="contacts_map_header">
+                <h3 class="contacts_map_header_text header__text">Route Map</h3>
+            </div>
+            <div class="contacts_map_position flex">
+                <iframe class="contacts_map_size" src="https://yandex.ru/map-widget/v1/-/CGDKyKZX"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <a class="flex" href="#top"><img class="footer_arrow_back" src="image/arrow_back.png" alt="ico"></a>
+    <h3 class="footer_h3">&copy;&nbsp;2017 Историческе Игры. Все права защищены</h3>
+</div>
+
+</body>
+</html>
