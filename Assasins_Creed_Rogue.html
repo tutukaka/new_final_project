@@ -13,11 +13,12 @@
     <script src="javaScript/catalog.js" defer></script>
 </head>
 <body>
+<div class="container container_all">
 <div class="header__all">
     <div class="header_background flex">
         <div class="header_info flex">
             <div id="top" class="header_info_logo">
-                <a class="header_info_logo_a" href="#">
+                <a class="header_info_logo_a" href="index.html">
                     <p class="header_info_logo_1">Historical</p>
                     <p class="header_info_logo_2">games</p>
                 </a>
@@ -42,42 +43,104 @@
             </form>
         </div>
     </div>
-    <div class="menu flex">
+    <div class="menu menu_all flex">
         <ul class="menu_ul flex">
             <li class="menu_list">
-                <a class="menu_link" href="#">Home</a>
+                <a class="menu__link menu__link_all" href="index.html">Home</a>
             </li>
             <li class="menu_list">
-                <a class="menu_link" href="#">About</a>
+                <a class="menu__link menu__link_all" href="#">About</a>
             </li>
             <li class="menu_list">
-                <a class="menu_link" href="#">Services</a>
+                <a class="menu__link menu__link_all " href="#">Services</a>
             </li>
             <li class="menu_list">
-                <a class="menu_link" href="#">Gallery</a>
+                <a class="menu__link menu__link_all menu__link_all_active" href="catalog.html">Gallery</a>
             </li>
             <li class="menu_list">
-                <a class="menu_link" href="#">News</a>
+                <a class="menu__link menu__link_all" href="#">News</a>
             </li>
             <li class="menu_list">
-                <a class="menu_link" href="#">Team</a>
+                <a class="menu__link menu__link_all" href="#">Team</a>
             </li>
             <li class="menu_list">
-                <a class="menu_link" href="#">Contact Us</a>
+                <a class="menu__link menu__link_all" href="#">Contact Us</a>
             </li>
         </ul>
     </div>
 </div>
-<div class="container">
-    <div class="catalog bxbb">
-        <div class="catalog_header bxbb">
-            <p class="catalog_header_text header__text">Our Gallery</p>
+    <div class="product_description bxbb flex">
+        <div class="product_description_gallery">
+            <div class="product_description_gallery_out"></div>
+            <div class="product_description_gallery_mini flex">
+                <div class="product_description_gallery_mini_item">
+                    <label for="product_description_gallery_mini_item1"
+                           class="product_description_gallery_mini_label">
+                        <img src="image/a1.jpg" class="product_description_gallery_mini_preview"/></label>
+                    <input type="radio" name="product_description_gallery_mini_list"
+                           class="product_description_gallery_mini_selector"
+                           value="1.jpg" id="product_description_gallery_mini_item1" checked/>
+                    <img src="image/a1.jpg" class="product_description_gallery_mini_selector_fullsize" />
+                </div>
+                <div class="product_description_gallery_mini_item">
+                    <label for="product_description_gallery_mini_item2"
+                           class="product_description_gallery_mini_label">
+                        <img src="image/a2.jpg" class="product_description_gallery_mini_preview"/></label>
+                    <input type="radio" name="product_description_gallery_mini_list"
+                           class="product_description_gallery_mini_selector"
+                           value="2.jpg" id="product_description_gallery_mini_item2" />
+                    <img src="image/a2.jpg" class="product_description_gallery_mini_selector_fullsize" />
+                </div>
+                <div class="product_description_gallery_mini_item">
+                    <label for="product_description_gallery_mini_item3"
+                           class="product_description_gallery_mini_label">
+                        <img src="image/a3.jpg" class="product_description_gallery_mini_preview"/></label>
+                    <input type="radio" name="product_description_gallery_mini_list"
+                           class="product_description_gallery_mini_selector"
+                           value="3.jpg" id="product_description_gallery_mini_item3" />
+                    <img src="image/a3.jpg" class="product_description_gallery_mini_selector_fullsize" />
+                </div>
+                <div class="product_description_gallery_mini_item">
+                    <label for="product_description_gallery_mini_item4"
+                           class="product_description_gallery_mini_label">
+                        <img src="image/a4.jpg" class="product_description_gallery_mini_preview"/></label>
+                    <input type="radio" name="product_description_gallery_mini_list"
+                           class="product_description_gallery_mini_selector"
+                           value="4.jpg" id="product_description_gallery_mini_item4" />
+                    <img src="image/a4.jpg" class="product_description_gallery_mini_selector_fullsize" />
+                </div>
+            </div>
+        </div>
+        <div class="product_description_text">
+            <p class="product_description_text_title">Assasin’s Creed:</p>
+            <p class="product_description_text_title product_description_text_title_version">Rogue</p>
+            <p class="product_description_text_priсe">$29.99</p>
+            <div class="button product_description_text_button">Buy</div>
+            <p class="product_description_text_content">
+                The plot is&nbsp;set in&nbsp;a&nbsp;fictional history of&nbsp;real
+                world events and follows the centuries-old struggle
+                between the Assassins, who fight for peace with free will, and the
+                Templars, who desire peace
+                through control. The story is&nbsp;set in&nbsp;the mid-18th century
+                during the Seven Years&rsquo; War, and follows
+                Shay Patrick Cormac, an&nbsp;Assassin-turned-Templar who hunts down
+                former members of&nbsp;his
+                Brotherhood after being betrayed by&nbsp;them. Gameplay in&nbsp;Rogue
+                is&nbsp;very similar to&nbsp;that of&nbsp;Black Flag
+                with a&nbsp;mixture of&nbsp;ship-based naval exploration and
+                third-person land-based exploration with some
+                new features.</p>
+        </div>
+    </div>
+    <div class="catalog catalog_product_page bxbb">
+        <div class="catalog_header catalog_product_page_header bxbb">
+            <p class="catalog_header_text header__text">Similar games</p>
         </div>
         <div class="catalog_list flex"></div>
     </div>
-    <div class="contacts">
-        <div class="contacts_us">
-            <div class="contacts_us_header">
+    <div class="contacts contacts_all">
+        <div class="contacts_us ">
+            <div class="contacts_us_header contacts_us_header_all">
                 <h3 class="contacts_us_header_text header__text">Contact Us</h3>
             </div>
             <div class="contacts_us_description flex">
@@ -117,7 +180,7 @@
                 </div>
             </div>
         </div>
-        <div class="contacts_map">
+        <div class="contacts_map contacts_map_all">
             <div class="contacts_map_header">
                 <h3 class="contacts_map_header_text header__text">Route Map</h3>
             </div>
@@ -127,9 +190,12 @@
         </div>
     </div>
 </div>
-<div class="footer">
-    <a class="flex" href="#top"><img class="footer_arrow_back" src="image/arrow_back.png" alt="ico"></a>
-    <h3 class="footer_h3">&copy;&nbsp;2017 Историческе Игры. Все права защищены</h3>
+<div class="footer footer_all">
+    <a class="flex" href="#top">
+        <img class="footer_arrow_back footer_arrow_back_all" src="image/arrow_back.png" alt="ico"></a>
+    <h3 class="footer_h3">
+        &copy;&nbsp;2017 Historical Games. All rights reserved&nbsp;| Design by
+        <span class="footer_h3_span">W3layouts</span></h3>
 </div>
 
 </body>
