@@ -406,7 +406,7 @@ body {
 .catalog {
   font-family: "Poppins", sans-serif;
   min-height: 889px;
-  padding-top: 93px;
+  padding: 93px 0 176px;
 }
 .catalog_header {
   text-align: center;
@@ -458,6 +458,18 @@ body {
   transition: background-color 1s, color 1s;
   background-color: #e1e1e1;
   color: #f44336;
+}
+.catalog_button {
+  width: 208px;
+  height: 38px;
+  margin: 70px auto 160px;
+  border: 1px solid #000000;
+  align-items: center;
+  justify-content: center;
+}
+.catalog_button_i {
+  padding-left: 3px;
+  margin-bottom: -3px;
 }
 
 .testimonial {
