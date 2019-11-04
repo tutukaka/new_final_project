@@ -329,8 +329,9 @@ body
 
 .catalog
   font-family: 'Poppins', sans-serif
-  min-height: 889px
-  padding: 93px 0 176px
+  &_home_page
+    min-height: 889px
+    padding: 93px 0 176px
   &_header
     text-align: center
     margin-bottom: 62px
@@ -350,6 +351,8 @@ body
         background-color: #f7f7f7
         position: relative
         text-align: center
+        &_product_page
+          background-color: transparent
         &_h3
           color: #000000
           font-size: 14px
@@ -376,7 +379,7 @@ body
   &_button
     width: 208px
     height: 38px
-    margin: 70px auto 160px
+    margin: 70px auto 0
     border: 1px solid #000000
     align-items: center
     justify-content: center
@@ -722,8 +725,8 @@ body
   height: 71px
   text-align: center
   position: relative
-  &_all
-    //margin-top: 84px
+  //&_all
+  //  //margin-top: 84px
   &_h3
     color: #ffffff
     font-size: 16px
@@ -741,6 +744,9 @@ body
       top: -1172px
 
 //страница каталога - catalog page
+.catalog_catalog
+  min-height: 1663px
+  padding: 175px 0 176px
 .discount
   height: 562px
   &_description
@@ -806,6 +812,7 @@ body
       padding-top: 62px
       &_label
         cursor: pointer
+
       &_preview
         width: 86px
         height: 63px

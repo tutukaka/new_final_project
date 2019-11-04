@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javaScript/catalog.js" defer></script>
+    <script src="javaScript/catalog.js" ></script>
 </head>
 <body>
 <div class="container container_all">
@@ -67,11 +67,18 @@
         </ul>
     </div>
 </div>
-    <div class="catalog bxbb">
+    <div class="catalog catalog_catalog bxbb">
         <div class="catalog_header bxbb">
             <p class="catalog_header_text header__text">Our Gallery</p>
         </div>
         <div class="catalog_list flex"></div>
+        <script>
+            const catalogList = document.querySelector('.catalog_list');
+            items.fetchItemsList().then(() => {
+                items.fetchItems(8);
+                catalogList.innerHTML = items.render(BasePage);
+            });
+        </script>
         <div class="catalog_button flex">Show more games <i class="catalog_button_i fas fa-chevron-right"></i></div>
     </div>
     <div class="discount flex">

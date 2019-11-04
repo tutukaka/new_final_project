@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javaScript/catalog.js" defer></script>
+    <script src="javaScript/catalog.js"></script>
     <script src="javaScript/slider.js" defer></script>
     <script src="javaScript/team_directory.js" defer></script>
 </head>
@@ -161,11 +161,18 @@
             </tr>
         </table>
     </div>
-    <div class="catalog bxbb">
+    <div class="catalog catalog_home_page bxbb">
         <div class="catalog_header bxbb">
             <p class="catalog_header_text header__text">Our Gallery</p>
         </div>
         <div class="catalog_list flex"></div>
+        <script>
+            const catalogList = document.querySelector('.catalog_list');
+            items.fetchItemsList().then(() => {
+                items.fetchItems(4);
+                catalogList.innerHTML = items.render(BasePage);
+            });
+        </script>
     </div>
     <div class="testimonial bxbb">
         <div class="testimonial_header"><p class="testimonial_header_p">Testimonial</p></div>

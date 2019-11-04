@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javaScript/catalog.js" defer></script>
+    <script src="javaScript/catalog.js"></script>
 </head>
 <body>
 <div class="container container_all">
@@ -76,38 +76,46 @@
                 <div class="product_description_gallery_mini_item">
                     <label for="product_description_gallery_mini_item1"
                            class="product_description_gallery_mini_label">
-                        <img src="image/a1.jpg" class="product_description_gallery_mini_preview"/></label>
+                        <img src="image/a1.jpg"
+                             class="product_description_gallery_mini_preview"/></label>
                     <input type="radio" name="product_description_gallery_mini_list"
                            class="product_description_gallery_mini_selector"
                            value="1.jpg" id="product_description_gallery_mini_item1" checked/>
-                    <img src="image/a1.jpg" class="product_description_gallery_mini_selector_fullsize" />
+                    <img src="image/a1.jpg"
+                         class="product_description_gallery_mini_selector_fullsize"/>
                 </div>
                 <div class="product_description_gallery_mini_item">
                     <label for="product_description_gallery_mini_item2"
                            class="product_description_gallery_mini_label">
-                        <img src="image/a2.jpg" class="product_description_gallery_mini_preview"/></label>
+                        <img src="image/a2.jpg"
+                             class="product_description_gallery_mini_preview"/></label>
                     <input type="radio" name="product_description_gallery_mini_list"
                            class="product_description_gallery_mini_selector"
                            value="2.jpg" id="product_description_gallery_mini_item2" />
-                    <img src="image/a2.jpg" class="product_description_gallery_mini_selector_fullsize" />
+                    <img src="image/a2.jpg"
+                         class="product_description_gallery_mini_selector_fullsize"/>
                 </div>
                 <div class="product_description_gallery_mini_item">
                     <label for="product_description_gallery_mini_item3"
                            class="product_description_gallery_mini_label">
-                        <img src="image/a3.jpg" class="product_description_gallery_mini_preview"/></label>
+                        <img src="image/a3.jpg"
+                             class="product_description_gallery_mini_preview"/></label>
                     <input type="radio" name="product_description_gallery_mini_list"
                            class="product_description_gallery_mini_selector"
                            value="3.jpg" id="product_description_gallery_mini_item3" />
-                    <img src="image/a3.jpg" class="product_description_gallery_mini_selector_fullsize" />
+                    <img src="image/a3.jpg"
+                         class="product_description_gallery_mini_selector_fullsize"/>
                 </div>
                 <div class="product_description_gallery_mini_item">
                     <label for="product_description_gallery_mini_item4"
                            class="product_description_gallery_mini_label">
-                        <img src="image/a4.jpg" class="product_description_gallery_mini_preview"/></label>
+                        <img src="image/a4.jpg"
+                             class="product_description_gallery_mini_preview"/></label>
                     <input type="radio" name="product_description_gallery_mini_list"
                            class="product_description_gallery_mini_selector"
                            value="4.jpg" id="product_description_gallery_mini_item4" />
-                    <img src="image/a4.jpg" class="product_description_gallery_mini_selector_fullsize" />
+                    <img src="image/a4.jpg"
+                         class="product_description_gallery_mini_selector_fullsize"/>
                 </div>
             </div>
         </div>
@@ -137,6 +145,13 @@
             <p class="catalog_header_text header__text">Similar games</p>
         </div>
         <div class="catalog_list flex"></div>
+        <script>
+            const catalogList = document.querySelector('.catalog_list');
+            items.fetchItemsList().then(() => {
+                items.fetchItems(4);
+                catalogList.innerHTML = items.render(ProductPage);
+            });
+        </script>
     </div>
     <div class="contacts contacts_all">
         <div class="contacts_us ">

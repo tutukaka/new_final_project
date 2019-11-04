@@ -405,6 +405,8 @@ body {
 
 .catalog {
   font-family: "Poppins", sans-serif;
+}
+.catalog_home_page {
   min-height: 889px;
   padding: 93px 0 176px;
 }
@@ -431,6 +433,9 @@ body {
   background-color: #f7f7f7;
   position: relative;
   text-align: center;
+}
+.catalog_list_item_text_product_page {
+  background-color: transparent;
 }
 .catalog_list_item_text_h3 {
   color: #000000;
@@ -462,7 +467,7 @@ body {
 .catalog_button {
   width: 208px;
   height: 38px;
-  margin: 70px auto 160px;
+  margin: 70px auto 0;
   border: 1px solid #000000;
   align-items: center;
   justify-content: center;
@@ -906,6 +911,11 @@ body {
 }
 .footer_arrow_back_all {
   top: -1172px;
+}
+
+.catalog_catalog {
+  min-height: 1663px;
+  padding: 175px 0 176px;
 }
 
 .discount {
