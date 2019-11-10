@@ -334,7 +334,9 @@ body
     padding: 93px 0 176px
   &_header
     text-align: center
-    margin-bottom: 62px
+    margin-bottom: 18px
+    &_home_page
+      margin-bottom: 0
   &_list
     display: flex
     width: 1210px
@@ -344,8 +346,11 @@ body
       width: 270px
       height: 376px
       border: 1px solid #acacac
+      &_img
+        width: 100%
+        height: 100%
     &_item
-      margin: 30px 15px 0
+      margin: 90px 15px 0
       &_text
         height: 105px
         background-color: #f7f7f7
@@ -746,7 +751,7 @@ body
 //страница каталога - catalog page
 .catalog_catalog
   min-height: 1663px
-  padding: 175px 0 176px
+  padding: 160px 0 176px
 .discount
   height: 562px
   &_description
@@ -795,7 +800,9 @@ body
   background-color: #dddddd
   min-height: 684px
   &_header
-    margin-bottom: 42px
+    margin-bottom: 0
+  &_list_item
+    margin-top: 75px
 .product_description
   min-height: 600px
   width: 970px
@@ -812,13 +819,12 @@ body
       padding-top: 62px
       &_label
         cursor: pointer
-
       &_preview
         width: 86px
         height: 63px
         box-shadow: none
         transition: transform 1s, -webkit-box-shadow 1s, -moz-box-shadow 1s, box-shadow 1s, width 1s, height 1s
-        &:hover
+        &_active
           -webkit-transform: scale(1.3, 1.3)
           transform: matrix(1.4, 0, 0, 1.4, 0, -9)
           -webkit-box-shadow: 0 32px 23px 0 rgba(0,0,0,0.46)
@@ -832,11 +838,51 @@ body
           top: -258px
           left: 1px
           display: none
+          cursor: pointer
         &:checked ~ &_fullsize
           display: block
           width: 470px
           height: 257px
-
+    &_max
+      display: none
+      &__screen
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #222
+        opacity: 0.8
+        position: fixed
+        top: 0
+        z-index: 100
+        display: block
+        text-align: center
+      &__image
+        max-height: 80%
+        max-width: 80%
+        z-index: 101
+        position: absolute
+        margin: auto
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+      &__close
+        z-index: 101
+        position: absolute
+        top: 40px
+        right: 40px
+        width: 60px
+        cursor: pointer
+      &__next
+        z-index: 101
+        position: absolute
+        top: 50%
+        right: 0
+      &__back
+        z-index: 101
+        position: absolute
+        top: 50%
+        left: 0
   &_text
     text-align: center
     padding-left: 30px

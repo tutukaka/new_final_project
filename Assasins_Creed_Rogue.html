@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="javaScript/catalog.js"></script>
+    <script src="javaScript/galary.js" defer></script>
 </head>
 <body>
 <div class="container container_all">
@@ -76,47 +77,59 @@
                 <div class="product_description_gallery_mini_item">
                     <label for="product_description_gallery_mini_item1"
                            class="product_description_gallery_mini_label">
-                        <img src="image/a1.jpg"
-                             class="product_description_gallery_mini_preview"/></label>
+                        <img src="image/min_img/a1-min.jpg"
+                             class="product_description_gallery_mini_preview
+                             product_description_gallery_mini_preview_active"/></label>
                     <input type="radio" name="product_description_gallery_mini_list"
                            class="product_description_gallery_mini_selector"
                            value="1.jpg" id="product_description_gallery_mini_item1" checked/>
-                    <img src="image/a1.jpg"
+                    <img src="image/midle_img/a1-midle.jpg"
+                         data-full_image_url="image/max_img/a1-max.jpg"
                          class="product_description_gallery_mini_selector_fullsize"/>
                 </div>
                 <div class="product_description_gallery_mini_item">
                     <label for="product_description_gallery_mini_item2"
                            class="product_description_gallery_mini_label">
-                        <img src="image/a2.jpg"
+                        <img src="image/min_img/a2-min.jpg"
                              class="product_description_gallery_mini_preview"/></label>
                     <input type="radio" name="product_description_gallery_mini_list"
                            class="product_description_gallery_mini_selector"
                            value="2.jpg" id="product_description_gallery_mini_item2" />
-                    <img src="image/a2.jpg"
+                    <img src="image/midle_img/a2-midle.jpg"
+                         data-full_image_url="image/max_img/a2-max.jpg"
                          class="product_description_gallery_mini_selector_fullsize"/>
                 </div>
                 <div class="product_description_gallery_mini_item">
                     <label for="product_description_gallery_mini_item3"
                            class="product_description_gallery_mini_label">
-                        <img src="image/a3.jpg"
+                        <img src="image/min_img/a3-min.jpg"
                              class="product_description_gallery_mini_preview"/></label>
                     <input type="radio" name="product_description_gallery_mini_list"
                            class="product_description_gallery_mini_selector"
                            value="3.jpg" id="product_description_gallery_mini_item3" />
-                    <img src="image/a3.jpg"
+                    <img src="image/midle_img/a3-midle.jpg"
+                         data-full_image_url="image/max_img/a3-max.jpg"
                          class="product_description_gallery_mini_selector_fullsize"/>
                 </div>
                 <div class="product_description_gallery_mini_item">
                     <label for="product_description_gallery_mini_item4"
                            class="product_description_gallery_mini_label">
-                        <img src="image/a4.jpg"
+                        <img src="image/min_img/a4-min.jpg"
                              class="product_description_gallery_mini_preview"/></label>
                     <input type="radio" name="product_description_gallery_mini_list"
                            class="product_description_gallery_mini_selector"
                            value="4.jpg" id="product_description_gallery_mini_item4" />
-                    <img src="image/a4.jpg"
+                    <img src="image/midle_img/a4-midle.jpg"
+                         data-full_image_url="image/max_img/a4-max.jpg"
                          class="product_description_gallery_mini_selector_fullsize"/>
                 </div>
+            </div>
+            <div class="product_description_gallery_max">
+                <img class="product_description_gallery_max__back" src="image/gallery/back.png" alt="Назад">
+                <img class="product_description_gallery_max__next" src="image/gallery/next.png" alt="Вперед">
+                <div class="product_description_gallery_max__screen"></div>
+                <img class="product_description_gallery_max__close" src="image/gallery/close.png" alt="">
+                <img class="product_description_gallery_max__image" src="11" alt="">
             </div>
         </div>
         <div class="product_description_text">
@@ -200,7 +213,7 @@
                 <h3 class="contacts_map_header_text header__text">Route Map</h3>
             </div>
             <div class="contacts_map_position flex">
-                <iframe class="contacts_map_size" src="https://yandex.ru/map-widget/v1/-/CGDKyKZX"></iframe>
+<!--                <iframe class="contacts_map_size" src="https://yandex.ru/map-widget/v1/-/CGDKyKZX"></iframe>-->
             </div>
         </div>
     </div>

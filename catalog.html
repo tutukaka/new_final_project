@@ -76,7 +76,7 @@
             const catalogList = document.querySelector('.catalog_list');
             items.fetchItemsList().then(() => {
                 items.fetchItems(8);
-                catalogList.innerHTML = items.render(BasePage);
+                catalogList.innerHTML = items.render();
             });
         </script>
         <div class="catalog_button flex">Show more games <i class="catalog_button_i fas fa-chevron-right"></i></div>
