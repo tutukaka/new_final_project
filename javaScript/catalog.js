@@ -24,7 +24,7 @@ class CatalogItem {
     }
 
     fetchItemsList() {
-         return fetch('catalog.json')
+         return fetch('https://raw.githubusercontent.com/tutukaka/new_final_project/master/catalog.json')
         .then(response => response.json())
             .catch(error => {console.log(`${error} вот`)})
         .then((items) => {
